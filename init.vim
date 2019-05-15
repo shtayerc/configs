@@ -27,6 +27,9 @@ imap <Right> <Nop>
 imap <Up> <Nop>
 imap <Down> <Nop>
 
+map <C-f> :silent! grep 
+set grepprg=ag\ $*
+
 augroup quickfix
     autocmd!
     " automatic location/quickfix window
