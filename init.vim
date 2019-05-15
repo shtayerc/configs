@@ -1,3 +1,5 @@
+source $HOME/.config/nvim/snippets
+
 colorscheme desert
 set number
 set relativenumber
