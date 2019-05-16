@@ -1,4 +1,7 @@
-source $HOME/.config/nvim/snippets
+let snippet_file=$HOME."/.config/nvim/snippets"
+if filereadable(snippet_file)
+    exec "source ".snippet_file
+endif
 
 colorscheme desert
 set number
