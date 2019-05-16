@@ -30,7 +30,7 @@ imap <Right> <Nop>
 imap <Up> <Nop>
 imap <Down> <Nop>
 
-map <C-f> :silent! grep 
+map <C-f> :silent! grep
 set grepprg=ag\ $*
 
 augroup quickfix
@@ -41,7 +41,7 @@ augroup quickfix
 augroup END
 
 "filebrowser
-map Q :Vex! .<CR>
+map Q :20Vex! .<CR>
 let g:netrw_banner=0        " disable annoying banner
 let g:netrw_altv=1          " open splits to the right
 let g:netrw_liststyle=3     " tree view
