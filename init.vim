@@ -51,5 +51,6 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 " go to the line where you left
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
-" show trailing whitespace
-match Todo /\s\+$/
+" show trailing whitespace while not in insert mode
+au InsertEnter * match none
+au InsertLeave * match Todo /\s\+$/
