@@ -30,7 +30,7 @@ imap <Right> <Nop>
 imap <Up> <Nop>
 imap <Down> <Nop>
 
-map <C-f> :silent! grep
+map <C-f> :silent! grep 
 set grepprg=ag\ $*
 
 augroup quickfix
