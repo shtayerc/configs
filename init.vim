@@ -30,7 +30,7 @@ imap <Right> <Nop>
 imap <Up> <Nop>
 imap <Down> <Nop>
 
-map <C-f> :silent! grep 
+map <C-f> :silent! grep! 
 set grepprg=ag\ $*
 
 augroup quickfix
@@ -52,5 +52,6 @@ let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
 " show trailing whitespace while not in insert mode
+match todo /\s\+$/
 au InsertEnter * match none
-au InsertLeave * match Todo /\s\+$/
+au InsertLeave * match todo /\s\+$/
