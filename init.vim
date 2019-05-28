@@ -30,6 +30,13 @@ imap <Right> <Nop>
 imap <Up> <Nop>
 imap <Down> <Nop>
 
+"autoclose brackets and quotes
+inoremap ( ()<Left>
+inoremap { {}<Left>
+inoremap [ []<Left>
+inoremap " ""<Left>
+inoremap ' ''<Left>
+
 map <C-f> :silent! grep! 
 set grepprg=ag\ $*
 
