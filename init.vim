@@ -16,6 +16,7 @@ set splitright
 set noswapfile
 set nobackup
 set nowritebackup
+set nomodeline
 
 map E <C-w><C-w>
 map 0 ^
