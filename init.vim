@@ -1,6 +1,6 @@
-let snippet_file=$HOME."/.config/nvim/snippets"
-if filereadable(snippet_file)
-    exec "source ".snippet_file
+let local_init=$HOME."/.config/nvim/local_init"
+if filereadable(local_init)
+    exec "source ".local_init
 endif
 
 colorscheme desert
