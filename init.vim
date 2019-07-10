@@ -38,7 +38,7 @@ inoremap [] []<Left>
 inoremap "" ""<Left>
 inoremap '' ''<Left>
 
-map <C-f> :silent! grep! 
+command! -nargs=1 Find silent! grep! <q-args>
 set grepprg=ag\ $*
 
 augroup quickfix
