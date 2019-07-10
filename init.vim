@@ -20,6 +20,8 @@ set nomodeline
 
 map E <C-w><C-w>
 map 0 ^
+map <C-j> :bnext<CR>
+map <C-k> :bprev<CR>
 
 "disable arrow keys
 map <Left> <Nop>
