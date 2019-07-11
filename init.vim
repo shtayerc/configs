@@ -52,14 +52,6 @@ augroup quickfix
     autocmd QuickFixCmdPost    l* lwindow
 augroup END
 
-"filebrowser
-map Q :Vex! .<CR>
-let g:netrw_banner=0        " disable annoying banner
-let g:netrw_altv=1          " open splits to the right
-let g:netrw_liststyle=3     " tree view
-let g:netrw_list_hide=netrw_gitignore#Hide()
-let g:netrw_list_hide.=',\(^\|\s\s\)\zs\.\S\+'
-
 " go to the line where you left
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
