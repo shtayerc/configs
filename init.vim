@@ -42,8 +42,8 @@ inoremap [] []<Left>
 inoremap "" ""<Left>
 inoremap '' ''<Left>
 
-command! -nargs=1 Find silent! grep! <q-args>
-set grepprg=ag\ $*
+command! -nargs=1 Find silent! grep! '<args>'
+set grepprg=ag\ -Q\ $*
 
 augroup quickfix
     autocmd!
