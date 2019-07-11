@@ -43,6 +43,7 @@ inoremap "" ""<Left>
 inoremap '' ''<Left>
 
 command! -nargs=1 Find silent! grep! '<args>'
+command! Reload source ~/.config/nvim/init.vim
 set grepprg=ag\ -Q\ $*
 
 augroup quickfix
