@@ -12,6 +12,7 @@ set listchars=eol:\\,tab:>-,space:.
 
 set path+=**
 set shiftwidth=4
+set expandtab
 set splitright
 
 set noswapfile
