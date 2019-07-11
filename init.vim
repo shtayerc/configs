@@ -8,6 +8,7 @@ set number
 set relativenumber
 set numberwidth=1
 set ignorecase
+set listchars=eol:\\,tab:>-,space:.
 
 set path+=**
 set shiftwidth=4
