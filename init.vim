@@ -43,6 +43,7 @@ inoremap "" ""<Left>
 inoremap '' ''<Left>
 
 command! -nargs=1 Find silent! grep! '<args>'
+command! -nargs=1 File enew | set buftype=nofile | 0read !find . -iname '*<args>*'
 command! Reload source ~/.config/nvim/init.vim
 set grepprg=ag\ -Q\ $*
 
