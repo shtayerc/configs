@@ -24,6 +24,7 @@ map E <C-w><C-w>
 map 0 ^
 map <C-j> :bnext<CR>
 map <C-k> :bprev<CR>
+map <C-]> :ltag <C-r><C-w> \| :bw \| lopen<CR>
 
 "disable arrow keys
 map <Left> <Nop>
