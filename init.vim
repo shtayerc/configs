@@ -57,7 +57,7 @@ augroup quickfix
 augroup END
 
 " go to the line where you left
-au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+au BufReadPost * silent! normal! g'"
 
 " show trailing whitespace while not in insert mode
 match todo /\s\+$/
