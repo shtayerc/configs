@@ -1,7 +1,4 @@
-let local_init=$HOME."/.config/nvim/local_init"
-if filereadable(local_init)
-    exec "source ".local_init
-endif
+silent! source $HOME/.config/nvim/local.vim
 
 colorscheme desert
 set number
@@ -49,17 +46,13 @@ command! -nargs=1 Dir enew | set buftype=nofile | 0read !find . -ipath '*<args>/
 command! Reload source ~/.config/nvim/init.vim
 set grepprg=ag\ -Q\ $*
 
-augroup quickfix
-    autocmd!
-    " automatic location/quickfix window
-    autocmd QuickFixCmdPost [^l]* cwindow
-    autocmd QuickFixCmdPost    l* lwindow
-augroup END
+" automatic location/quickfix window
+autocmd QuickFixCmdPost [^l]* cwindow
 
 " go to the line where you left
-au BufReadPost * silent! normal! g'"
+autocmd BufReadPost * silent! normal! g'"
 
 " show trailing whitespace while not in insert mode
 match todo /\s\+$/
-au InsertEnter * match none
-au InsertLeave * match todo /\s\+$/
+autocmd InsertEnter * match none
+autocmd InsertLeave * match todo /\s\+$/
