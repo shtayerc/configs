@@ -53,6 +53,15 @@ autocmd QuickFixCmdPost [^l]* cwindow
 autocmd BufReadPost * silent! normal! g'"
 
 " show trailing whitespace while not in insert mode
-match todo /\s\+$/
+match Todo /\s\+$/
 autocmd InsertEnter * match none
-autocmd InsertLeave * match todo /\s\+$/
+autocmd InsertLeave * match Todo /\s\+$/
+
+" diff colors
+function DiffColor()
+    :highlight! link DiffText Todo
+    :highlight! DiffAdd ctermbg=green ctermfg=black
+    :highlight! DiffDelete ctermbg=red ctermfg=black
+    :highlight! DiffChange ctermbg=lightgray ctermfg=black
+endfunction
+command! Diff windo diffthis | call DiffColor()
