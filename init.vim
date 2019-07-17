@@ -58,10 +58,11 @@ autocmd InsertEnter * match none
 autocmd InsertLeave * match Todo /\s\+$/
 
 " diff colors
-function DiffColor()
+function! DiffColor()
     :highlight! link DiffText Todo
     :highlight! DiffAdd ctermbg=green ctermfg=black
     :highlight! DiffDelete ctermbg=red ctermfg=black
     :highlight! DiffChange ctermbg=lightgray ctermfg=black
 endfunction
-command! Diff windo diffthis | call DiffColor()
+
+autocmd BufEnter,OptionSet * if &diff | call DiffColor() | endif
