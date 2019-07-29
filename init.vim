@@ -43,7 +43,7 @@ inoremap '' ''<Left>
 command! -nargs=1 Find silent! grep! '<args>'
 command! -nargs=1 File enew | set buftype=nofile | 0read !find . -iname '*<args>*'
 command! -nargs=1 Dir enew | set buftype=nofile | 0read !find . -ipath '*<args>/*'
-command! Reload source ~/.config/nvim/init.vim
+command! Reload source $HOME/.config/nvim/init.vim
 set grepprg=ag\ -Q\ $*
 
 " automatic location/quickfix window
