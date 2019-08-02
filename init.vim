@@ -21,7 +21,7 @@ map E <C-w><C-w>
 map 0 ^
 map <C-j> :bnext<CR>
 map <C-k> :bprev<CR>
-map <C-]> :ltag <C-r><C-w> \| :bw \| lopen<CR>
+map <C-]> :ltag <C-r><C-w> \| :bd \| lopen<CR>
 
 "disable arrow keys
 map <Left> <Nop>
@@ -41,8 +41,8 @@ inoremap "" ""<Left>
 inoremap '' ''<Left>
 
 command! -nargs=1 Find silent! grep! '<args>'
-command! -nargs=1 File enew | set buftype=nofile | 0read !find . -iname '*<args>*'
-command! -nargs=1 Dir enew | set buftype=nofile | 0read !find . -ipath '*<args>/*'
+command! -nargs=1 -complete=file File enew | set buftype=nofile | 0read !find . -iname '*<args>*'
+command! -nargs=1 -complete=dir Dir enew | set buftype=nofile | 0read !find . -ipath '*<args>*'
 command! Reload source $HOME/.config/nvim/init.vim
 set grepprg=ag\ -Q\ $*
 
