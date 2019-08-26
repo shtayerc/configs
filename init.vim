@@ -62,7 +62,7 @@ function! DiffColor()
     :highlight! link DiffText Todo
     :highlight! DiffAdd ctermbg=green ctermfg=black
     :highlight! DiffDelete ctermbg=red ctermfg=black
-    :highlight! DiffChange ctermbg=black ctermfg=white
+    :highlight! DiffChange ctermbg=white ctermfg=black
 endfunction
 
 autocmd BufEnter,OptionSet * if &diff | call DiffColor() | endif
