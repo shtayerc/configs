@@ -6,6 +6,7 @@ set relativenumber
 set numberwidth=1
 set ignorecase
 set listchars=eol:\\,tab:>-,space:.
+set completeopt=longest
 
 set path+=**
 set shiftwidth=4
