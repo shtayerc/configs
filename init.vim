@@ -21,7 +21,7 @@ set nowritebackup
 set nomodeline
 set hidden
 
-map E <C-w><C-w>
+map Q <C-w>w
 map 0 ^
 map <silent> <C-f> :b #<CR>
 imap <silent> <C-f> <Esc>:b #<CR>a
