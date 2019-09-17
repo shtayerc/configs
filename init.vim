@@ -22,9 +22,8 @@ set nomodeline
 
 map E <C-w><C-w>
 map 0 ^
-map <C-j> :bnext<CR>
-map <C-k> :bprev<CR>
-map <C-]> :ltag <C-r><C-w> \| :bd \| lopen<CR>
+map <silent> <C-f> :b #<CR>
+map <silent> <C-]> :ltag <C-r><C-w> \| :bd \| lopen<CR>
 
 "disable arrow keys
 map <Left> <Nop>
