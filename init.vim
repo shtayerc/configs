@@ -52,11 +52,8 @@ set grepprg=ag\ -Q\ $*
 " automatic location/quickfix window
 autocmd QuickFixCmdPost [^l]* cwindow
 
-" go to the line where you left
-autocmd BufReadPost * silent! normal! g'"
-
-" keep cursor position while buffer switching
-autocmd BufEnter * silent! normal! g`"
+" go to the position where you left
+autocmd BufReadPost,BufEnter * silent! normal! g`"
 
 " show trailing whitespace while not in insert mode
 match Todo /\s\+$/
