@@ -19,10 +19,12 @@ set noswapfile
 set nobackup
 set nowritebackup
 set nomodeline
+set hidden
 
 map E <C-w><C-w>
 map 0 ^
 map <silent> <C-f> :b #<CR>
+imap <silent> <C-f> <Esc>:b #<CR>a
 map <silent> <C-]> :ltag <C-r><C-w> \| :bd \| lopen<CR>
 
 "disable arrow keys
@@ -52,6 +54,9 @@ autocmd QuickFixCmdPost [^l]* cwindow
 
 " go to the line where you left
 autocmd BufReadPost * silent! normal! g'"
+
+" keep cursor position while buffer switching
+autocmd BufEnter * silent! normal! g`"
 
 " show trailing whitespace while not in insert mode
 match Todo /\s\+$/
