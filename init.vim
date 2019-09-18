@@ -53,7 +53,7 @@ set grepprg=ag\ -Q\ $*
 autocmd QuickFixCmdPost [^l]* cwindow
 
 " go to the position where you left
-autocmd BufReadPost,BufEnter * silent! normal! g`"
+autocmd BufReadPost,BufEnter * if line("`\"") > 1 | execute 'silent! normal! g`"' | endif
 
 " show trailing whitespace while not in insert mode
 match Todo /\s\+$/
