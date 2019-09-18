@@ -43,6 +43,7 @@ inoremap {} {}<Left>
 inoremap [] []<Left>
 inoremap "" ""<Left>
 inoremap '' ''<Left>
+inoremap {<CR> {<CR>}<C-o>O
 
 command! -nargs=1 Find silent! grep! '<args>'
 command! -nargs=1 -complete=file File enew | set buftype=nofile | 0read !find . -iname '*<args>*'
