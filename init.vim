@@ -28,6 +28,7 @@ imap <silent> <C-j> <Esc>:bnext<CR>
 map <silent> <C-k> :bprev<CR>
 imap <silent> <C-k> <Esc>:bprev<CR>
 map <silent> <C-]> :ltag <C-r><C-w> \| :bd \| lopen<CR>
+cnoremap <C-A> <Home>
 
 "disable arrow keys
 map <Left> <Nop>
