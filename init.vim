@@ -23,8 +23,10 @@ set hidden
 
 map Q <C-w>w
 map 0 ^
-map <silent> <C-f> :b #<CR>
-imap <silent> <C-f> <Esc>:b #<CR>a
+map <silent> <C-j> :bnext<CR>
+imap <silent> <C-j> <Esc>:bnext<CR>
+map <silent> <C-k> :bprev<CR>
+imap <silent> <C-k> <Esc>:bprev<CR>
 map <silent> <C-]> :ltag <C-r><C-w> \| :bd \| lopen<CR>
 
 "disable arrow keys
