@@ -9,6 +9,7 @@ set listchars=eol:\\,tab:>-,space:.
 set pumheight=5
 set shortmess+=I
 set inccommand=nosplit
+set wildignorecase
 
 set path+=**
 set shiftwidth=4
