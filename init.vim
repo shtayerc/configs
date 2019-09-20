@@ -19,11 +19,12 @@ set noswapfile
 set nobackup
 set nowritebackup
 set nomodeline
+set hidden
 
 map Q <C-w>w
 map 0 ^
 map <silent> <C-f> :b #<CR>
-imap <silent> <C-f> <Esc>:w<CR>:b #<CR>
+imap <silent> <C-f> <Esc>:b #<CR>
 map <silent> <C-]> :ltag <C-r><C-w> \| :bd \| lopen<CR>
 cnoremap <C-A> <Home>
 
