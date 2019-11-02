@@ -39,6 +39,7 @@ imap <Left> <Nop>
 imap <Right> <Nop>
 imap <Up> <Nop>
 imap <Down> <Nop>
+imap <C-C> <Esc>
 
 "move between brackets
 inoremap () ()<Left>
