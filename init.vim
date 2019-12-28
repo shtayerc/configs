@@ -5,6 +5,7 @@ set number
 set relativenumber
 set numberwidth=1
 set ignorecase
+set smartcase
 set listchars=eol:\\,tab:>-,space:.
 set pumheight=5
 set shortmess+=I
