@@ -68,8 +68,8 @@ autocmd BufReadPost,BufEnter * if line("`\"") > 1 | execute 'silent! normal! g`"
 
 " show trailing whitespace while not in insert mode
 match Todo /\s\+$/
-autocmd InsertEnter * match none
-autocmd InsertLeave * match Todo /\s\+$/
+autocmd InsertEnter * match none | set noignorecase
+autocmd InsertLeave * match Todo /\s\+$/ | set ignorecase
 
 " diff colors
 function! DiffColor()
