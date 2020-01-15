@@ -1,1 +1,3 @@
 bind status D !@?rm %(file)
+bind generic j next
+bind generic k previous
