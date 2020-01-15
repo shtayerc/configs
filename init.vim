@@ -28,6 +28,7 @@ map Q <C-w>w
 map 0 ^
 map <silent> <C-f> :b #<CR>
 imap <silent> <C-f> <Esc>:b #<CR>
+nmap gb :ls<CR>:b<Space>
 map <silent> <C-]> :ltag <C-r><C-w> \| :bd \| lopen<CR>
 cnoremap <C-A> <Home>
 
@@ -45,7 +46,7 @@ imap <Down> <Nop>
 inoremap <C-C> <Esc>
 noremap <C-C> <Esc>
 vnoremap <C-C> <Esc>
-cnoremap <C-C> <Esc>
+cnoremap <C-C> <C-C><C-C>
 
 "move between brackets
 inoremap () ()<Left>
