@@ -1,11 +1,9 @@
 silent! source $HOME/.config/nvim/local.vim
 
 colorscheme desert
-set number
-set relativenumber
 set numberwidth=1
-set ignorecase
-set smartcase
+set number relativenumber
+set ignorecase smartcase
 set listchars=eol:\\,tab:>-,space:.
 set pumheight=5
 set shortmess+=I
@@ -16,18 +14,14 @@ set path+=**
 set shiftwidth=4
 set tabstop=4
 set expandtab
-set splitright
+set splitright splitbelow
 
-set noswapfile
-set nobackup
-set nowritebackup
+set noswapfile nobackup nowritebackup
 set nomodeline
 set hidden
 
 map Q <C-w>w
 map 0 ^
-map <silent> <C-f> :b #<CR>
-imap <silent> <C-f> <Esc>:b #<CR>
 nmap gb :ls<CR>:b<Space>
 map <silent> <C-]> :ltag <C-r><C-w> \| :bd \| lopen<CR>
 cnoremap <C-A> <Home>
