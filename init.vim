@@ -17,6 +17,7 @@ set expandtab
 set splitright splitbelow
 
 set noswapfile nobackup nowritebackup
+set undofile
 set nomodeline
 set hidden
 
