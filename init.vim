@@ -43,6 +43,9 @@ noremap <C-C> <Esc>
 vnoremap <C-C> <Esc>
 cnoremap <C-C> <C-C><C-C>
 
+"toggle tabs and spaces
+inoremap <S-Tab> <C-o>:set expandtab!<CR>
+
 "move between brackets
 inoremap () ()<Left>
 inoremap {} {}<Left>
