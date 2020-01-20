@@ -24,7 +24,7 @@ set hidden
 map Q <C-w>w
 map 0 ^
 nmap gb :ls<CR>:b<Space>
-map <silent> <C-]> :ltag <C-r><C-w> \| :bd \| lopen<CR>
+map <silent> <C-]> :ptag <C-r><C-w><CR>
 cnoremap <C-A> <Home>
 
 "disable arrow keys
