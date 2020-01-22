@@ -4,7 +4,7 @@ colorscheme desert
 set numberwidth=1
 set number relativenumber
 set ignorecase smartcase
-set listchars=eol:\\,tab:>-,space:.
+set listchars=eol:\\,tab:>\ ,space:.
 set pumheight=5
 set shortmess+=I
 set inccommand=nosplit
