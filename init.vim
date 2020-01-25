@@ -4,7 +4,8 @@ colorscheme desert
 set numberwidth=1
 set number relativenumber
 set ignorecase smartcase
-set listchars=eol:\\,tab:>\ ,space:.
+set list
+set listchars=tab:>\ ,trail:.
 set pumheight=5
 set shortmess+=I
 set inccommand=nosplit
@@ -65,10 +66,9 @@ autocmd QuickFixCmdPost [^l]* cwindow
 " go to the position where you left
 autocmd BufReadPost,BufEnter * if line("`\"") > 1 | execute 'silent! normal! g`"' | endif
 
-" show trailing whitespace while not in insert mode
-match Todo /\s\+$/
-autocmd InsertEnter * match none | set noignorecase
-autocmd InsertLeave * match Todo /\s\+$/ | set ignorecase
+" disable ignore case in insert mode
+autocmd InsertEnter * | set noignorecase
+autocmd InsertLeave * | set ignorecase
 
 " diff colors
 function! DiffColor()
