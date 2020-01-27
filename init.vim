@@ -67,8 +67,8 @@ autocmd QuickFixCmdPost [^l]* cwindow
 autocmd BufReadPost,BufEnter * if line("`\"") > 1 | execute 'silent! normal! g`"' | endif
 
 " disable ignore case in insert mode
-autocmd InsertEnter * | set noignorecase
-autocmd InsertLeave * | set ignorecase
+autocmd InsertEnter * set noignorecase | set nolist
+autocmd InsertLeave * set ignorecase | set list
 
 " diff colors
 function! DiffColor()
