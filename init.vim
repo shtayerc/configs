@@ -5,7 +5,7 @@ set numberwidth=1
 set number relativenumber
 set ignorecase smartcase
 set list
-set listchars=tab:>\ ,trail:.
+set listchars=tab:-\ ,trail:.
 set pumheight=5
 set shortmess+=I
 set inccommand=nosplit
