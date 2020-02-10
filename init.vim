@@ -27,6 +27,7 @@ map 0 ^
 nmap gb :ls<CR>:b<Space>
 map <silent> <C-]> :ptag <C-r><C-w><CR>
 cnoremap <C-A> <Home>
+noremap Č :
 
 "disable arrow keys
 map <Left> <Nop>
