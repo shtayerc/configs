@@ -11,7 +11,6 @@ set shortmess+=I
 set inccommand=nosplit
 set wildignorecase
 
-set path+=**
 set shiftwidth=4
 set tabstop=4
 set expandtab
