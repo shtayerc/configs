@@ -74,6 +74,9 @@ autocmd BufReadPost,BufEnter * if line("`\"") > 1 | execute 'silent! normal! g`"
 autocmd InsertEnter * set noignorecase | set nolist
 autocmd InsertLeave * set ignorecase | set list
 
+" handle resizing terminal window
+autocmd VimResized * wincmd =
+
 " diff colors
 function! DiffColor()
     :highlight! link DiffText Todo
