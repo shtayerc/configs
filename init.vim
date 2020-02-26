@@ -27,7 +27,7 @@ noremap <C-k> :bnext<CR>
 noremap <C-j> :bprev<CR>
 inoremap <C-k> <C-o>:bprev<CR>
 inoremap <C-j> <C-o>:bnext<CR>
-map <silent> <C-]> :ptag <C-r><C-w><CR>
+map <silent> <C-]> :vert stag <C-r><C-w><CR>
 cnoremap <C-A> <Home>
 noremap Č :
 
