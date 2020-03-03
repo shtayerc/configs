@@ -67,7 +67,7 @@ set grepprg=ag\ --nocolor\ -Q\ $*
 autocmd QuickFixCmdPost [^l]* cwindow
 
 " go to the position where you left
-autocmd BufReadPost,BufEnter * if line("`\"") > 1 | execute 'silent! normal! g`"' | endif
+autocmd BufReadPost,BufEnter * silent! normal! g'"
 
 " disable ignore case in insert mode
 autocmd InsertEnter * set noignorecase | set nolist
