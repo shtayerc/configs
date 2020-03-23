@@ -21,6 +21,9 @@ set undofile
 set nomodeline
 set hidden
 
+set linebreak
+set breakat=\ 
+
 map Q <C-w>w
 map 0 ^
 noremap <C-k> :bnext<CR>
