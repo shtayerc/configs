@@ -21,8 +21,9 @@ set undofile
 set nomodeline
 set hidden
 
-set linebreak
+set linebreak breakindent
 set breakat=\ 
+set breakindentopt=shift:4
 
 map Q <C-w>w
 map 0 ^
