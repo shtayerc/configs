@@ -27,10 +27,10 @@ set breakindentopt=shift:4
 
 map Q <C-w>w
 map 0 ^
-noremap <C-k> :bnext<CR>
-noremap <C-j> :bprev<CR>
-inoremap <C-k> <C-o>:bprev<CR>
-inoremap <C-j> <C-o>:bnext<CR>
+noremap <silent> <C-k> :bnext<CR>
+noremap <silent> <C-j> :bprev<CR>
+inoremap <silent> <C-k> <C-o>:bprev<CR>
+inoremap <silent> <C-j> <C-o>:bnext<CR>
 map <silent> <C-]> :vert stag! <C-r><C-w><CR>
 cnoremap <C-A> <Home>
 noremap Č :
