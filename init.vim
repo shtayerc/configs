@@ -9,7 +9,6 @@ set listchars=tab:-\ ,trail:.
 set pumheight=5
 set shortmess+=I
 set inccommand=nosplit
-set wildignorecase
 
 set shiftwidth=4
 set tabstop=4
