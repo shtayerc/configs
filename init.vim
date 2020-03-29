@@ -70,7 +70,7 @@ set grepprg=ag\ --nocolor\ --vimgrep\ -Q\ $*
 autocmd QuickFixCmdPost [^l]* cwindow
 
 " go to the position where you left
-autocmd BufReadPost,BufEnter * silent! normal! g'"
+autocmd BufReadPost * silent! normal! g'"
 
 " disable ignore case in insert mode
 autocmd InsertEnter * set noignorecase | set nolist
