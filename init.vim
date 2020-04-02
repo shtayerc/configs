@@ -64,7 +64,7 @@ inoremap {<CR> {<CR>}<C-o>O
 command! -nargs=1 Grep silent! grep! '<args>'
 command! -nargs=1 -complete=file File enew | set buftype=nofile | 0read !find . -iname '*<args>*'
 command! Reload source $HOME/.config/nvim/init.vim
-set grepprg=ag\ --nocolor\ --vimgrep\ -Q\ $*
+set grepprg=ag\ --ignore\ tags\ --nocolor\ --vimgrep\ -Q\ $*
 
 " automatic location/quickfix window
 autocmd QuickFixCmdPost [^l]* cwindow | set nowrap
