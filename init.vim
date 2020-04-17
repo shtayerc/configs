@@ -28,6 +28,7 @@ map Q <C-w>w
 map 0 ^
 noremap <silent> <C-k> :bnext<CR>
 noremap <silent> <C-j> :bprev<CR>
+noremap <silent> <C-c><C-c> :nohlsearch<CR>
 inoremap <silent> <C-k> <C-o>:bprev<CR>
 inoremap <silent> <C-j> <C-o>:bnext<CR>
 map <silent> <C-]> :vert stag! <C-r><C-w><CR>
