@@ -31,7 +31,7 @@ noremap <silent> <C-j> :bprev<CR>
 noremap <silent> <C-c><C-c> :nohlsearch<CR>
 inoremap <silent> <C-k> <C-o>:bprev<CR>
 inoremap <silent> <C-j> <C-o>:bnext<CR>
-map <silent> <C-]> :vert stag! <C-r><C-w><CR>
+map <silent> <C-]> :ltag <C-r><C-w> \| lopen<CR>
 noremap Č :
 
 "disable arrow keys
