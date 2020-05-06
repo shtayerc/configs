@@ -48,7 +48,6 @@ imap <Down> <Nop>
 inoremap <C-C> <Esc>
 noremap <C-C> <Esc>
 vnoremap <C-C> <Esc>
-cnoremap <C-C> <Esc>
 
 "insert tab
 inoremap <S-Tab> <C-v><Tab>
