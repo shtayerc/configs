@@ -29,8 +29,8 @@ map 0 ^
 noremap <silent> <C-k> :bnext<CR>
 noremap <silent> <C-j> :bprev<CR>
 noremap <silent> <C-c><C-c> :nohlsearch<CR>
-inoremap <silent> <C-k> <C-o>:bprev<CR>
-inoremap <silent> <C-j> <C-o>:bnext<CR>
+inoremap <silent> <C-k> <Esc>:bprev<CR>
+inoremap <silent> <C-j> <Esc>:bnext<CR>
 map <silent> <C-]> :ltag <C-r><C-w> \| lopen<CR>
 noremap Č :
 
