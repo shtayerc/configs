@@ -66,9 +66,6 @@ command! Reload source $HOME/.config/nvim/init.vim
 command! W w
 set grepprg=ag\ --ignore\ tags\ --nocolor\ --vimgrep\ -Q\ $*
 
-" automatic location/quickfix window
-autocmd QuickFixCmdPost [^l]* cwindow | set nowrap
-
 " go to the position where you left
 autocmd BufReadPost * silent! normal! g'"
 
