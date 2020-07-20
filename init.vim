@@ -9,6 +9,7 @@ set listchars=tab:-\ ,trail:.
 set pumheight=5
 set shortmess+=I
 set inccommand=nosplit
+let g:netrw_fastbrowse = 0
 
 set shiftwidth=4
 set tabstop=4
