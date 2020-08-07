@@ -3,3 +3,4 @@ bind generic j next
 bind generic k previous
 bind stage l scroll-right
 bind stage h scroll-left
+bind status S >git difftool -x 'nvim -d' -y %(commit) %(file)
