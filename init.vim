@@ -62,7 +62,7 @@ inoremap "" ""<Left>
 inoremap '' ''<Left>
 inoremap {<CR> {<CR>}<C-o>O
 
-command! -nargs=+ Grep silent! grep! <args> | cwindow | set nowrap
+command! -nargs=+ Grep silent! grep! <args> | cwindow | setlocal nowrap
 command! -nargs=1 -complete=file File enew | set buftype=nofile | 0read !find . -iname '*<args>*'
 command! Reload source $HOME/.config/nvim/init.vim
 command! W w
