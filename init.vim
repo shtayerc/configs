@@ -28,6 +28,7 @@ set breakindentopt=shift:4
 map Q <C-w>w
 map 0 ^
 nmap gb :ls<CR>:b<Space>
+nmap <silent> gl :b #<CR>
 noremap <silent> <C-k> :bnext<CR>
 noremap <silent> <C-j> :bprev<CR>
 noremap <silent> <C-c><C-c> :nohlsearch<CR>
