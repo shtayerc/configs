@@ -67,7 +67,7 @@ command! -nargs=+ Grep silent! grep! <args> | cwindow | setlocal nowrap
 command! -nargs=1 -complete=file File enew | set buftype=nofile | 0read !find . -iname '*<args>*'
 command! Reload source $HOME/.config/nvim/init.vim
 command! W w
-command! Mkdir :!mkdir -p %:h
+command! Mkdir :!mkdir -p '%:h'
 set grepprg=ag\ --ignore\ tags\ --nocolor\ --vimgrep\ -Q\ $*
 
 " go to the position where you left
