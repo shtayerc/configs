@@ -1,0 +1,9 @@
+[user]
+	name = shtayerc
+	email = david.murko@mailbox.org
+[core]
+	editor = nvim
+[pull]
+	rebase = true
+[rebase]
+	autoStash = true
