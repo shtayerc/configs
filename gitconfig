@@ -3,8 +3,6 @@
 	email = david.murko@mailbox.org
 [core]
 	editor = nvim
-[pull]
-	rebase = true
 [rebase]
 	autoStash = true
 [init]

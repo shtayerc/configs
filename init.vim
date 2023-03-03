@@ -1,5 +1,3 @@
-silent! source $HOME/.config/nvim/local.vim
-
 colorscheme desert
 set numberwidth=1
 set number relativenumber
@@ -10,6 +8,8 @@ set pumheight=5
 set shortmess+=I
 set inccommand=nosplit
 let g:netrw_fastbrowse = 0
+"disable mouse, we have tmux for that
+set mouse=
 
 set shiftwidth=4
 set tabstop=4
@@ -89,3 +89,5 @@ function! DiffColor()
 endfunction
 
 autocmd BufEnter,OptionSet * if &diff | call DiffColor() | endif
+
+silent! source $HOME/.config/nvim/local.vim
