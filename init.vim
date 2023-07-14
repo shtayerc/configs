@@ -5,6 +5,7 @@ set ignorecase smartcase
 set list
 set listchars=tab:-\ ,trail:.
 set pumheight=5
+let g:editorconfig = v:false
 set shortmess+=I
 set inccommand=nosplit
 let g:netrw_fastbrowse = 0
