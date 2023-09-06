@@ -91,4 +91,7 @@ endfunction
 
 autocmd BufEnter,OptionSet * if &diff | call DiffColor() | endif
 
+lua <<EOF
+vim.g.editorconfig = false
+EOF
 silent! source $HOME/.config/nvim/local.vim
