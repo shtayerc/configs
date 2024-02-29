@@ -1,0 +1,3 @@
+! option = symbols
+  slovene_letters_on_uk:sloletters  = +slovene_letters_on_uk(sloletters)
+! include %S/evdev

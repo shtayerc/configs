@@ -1,0 +1,10 @@
+//set xkb_options to "slovene_letters_on_uk:sloletters"
+
+xkb_symbols "sloletters" {
+    key <AD11> { [ bracketleft,  braceleft,  U0161,   U0160 ] }; // [ { š Š
+    key <AD12> { [ bracketright, braceright, dstroke, Dstroke ] }; // ] } đ Đ
+    key <AC10> { [ semicolon, colon, U010D,  U010C ] }; // ; : č Č
+    key <AC11> { [ apostrophe, at, cacute, Cacute] }; // ' @ ć Ć
+    key <BKSL>  { [ numbersign, asciitilde,  U017E, U017D ] }; // # ~ ž Ž
+    include "level3(caps_switch)"
+};
