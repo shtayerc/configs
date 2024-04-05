@@ -69,7 +69,7 @@ command! -nargs=1 -complete=file File enew | set buftype=nofile | 0read !find . 
 command! Reload source $HOME/.config/nvim/init.vim
 command! W w
 command! Mkdir :!mkdir -p '%:h'
-set grepprg=ag\ --ignore\ tags\ --nocolor\ --vimgrep\ -Q\ $*
+set grepprg=rg\ --vimgrep\ -F\ $*
 
 " go to the position where you left
 autocmd BufReadPost * silent! normal! g'"
