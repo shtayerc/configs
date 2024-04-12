@@ -1,4 +1,5 @@
 //set xkb_options to "slovene_letters_on_uk:sloletters"
+//gsettings set org.gnome.desktop.input-sources xkb-options "['slovene_letters_on_uk:sloletters']"
 
 xkb_symbols "sloletters" {
     key <AD11> { [ bracketleft,  braceleft,  U0161,   U0160 ] }; // [ { š Š
