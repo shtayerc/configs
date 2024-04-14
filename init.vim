@@ -50,7 +50,6 @@ imap <Down> <Nop>
 
 "remap Ctrl+c to Esc
 inoremap <C-C> <Esc>
-noremap <C-C> <Esc>
 vnoremap <C-C> <Esc>
 
 "insert tab
