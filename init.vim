@@ -68,7 +68,6 @@ command! -nargs=1 -complete=file File enew | set buftype=nofile | 0read !find . 
 command! Reload source $HOME/.config/nvim/init.vim
 command! W w
 command! Mkdir :!mkdir -p '%:h'
-set grepprg=rg\ --vimgrep\ -F\ $*
 
 " go to the position where you left
 autocmd BufReadPost * silent! normal! g'"
@@ -79,16 +78,6 @@ autocmd InsertLeave * set ignorecase | set list
 
 " handle resizing terminal window
 autocmd VimResized * wincmd =
-
-" diff colors
-function! DiffColor()
-    :highlight! link DiffText Todo
-    :highlight! DiffAdd ctermbg=green ctermfg=black
-    :highlight! DiffDelete ctermbg=red ctermfg=black
-    :highlight! DiffChange ctermbg=white ctermfg=black
-endfunction
-
-autocmd BufEnter,OptionSet * if &diff | call DiffColor() | endif
 
 lua <<EOF
 vim.g.editorconfig = false
