@@ -1,0 +1,8 @@
+git:
+  pagers:
+    - pager: 'delta --dark --paging=never --minus-style="syntax #3d0000" --minus-emph-style="syntax #5c0000" --plus-style="syntax #002b00" --plus-emph-style="syntax #004500"'
+disableStartupPopups: true
+gui:
+  scrollHeight: 20
+  mouseEvents: false #disable donate and ask question text
+  showCommandLog: false

@@ -4,3 +4,4 @@ bind generic k previous
 bind stage l scroll-right
 bind stage h scroll-left
 bind status S >git difftool -x 'nvim -d' -y %(commit) %(file)
+bind status D >sh -c "git diff HEAD -- %(file) | delta --paging always"

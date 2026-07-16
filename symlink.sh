@@ -12,3 +12,7 @@ ln -sf "$DIR"/tigrc "$HOME"/.config/tig/config
 ln -sf "$DIR"/config.fish "$HOME"/.config/fish/config.fish
 ln -sf "$DIR"/gitconfig "$HOME"/.config/git/config
 ln -sf "$DIR"/xkb "$HOME"/.config/xkb
+
+[ "$(uname)" = "Darwin" ] && LAZYGIT_DIR="$HOME/Library/Application Support/lazygit" || LAZYGIT_DIR="$HOME/.config/lazygit"
+mkdir -p "$LAZYGIT_DIR"
+ln -sf "$DIR"/config.yml "$LAZYGIT_DIR"/config.yml
