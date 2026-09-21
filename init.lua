@@ -9,6 +9,8 @@ vim.opt.smartcase = true
 vim.opt.list = true
 vim.opt.listchars = { tab = "- ", trail = "." }
 vim.opt.pumheight = 5
+-- noselect: never preselect/insert the first completion candidate
+vim.opt.completeopt = { "menu", "menuone", "popup", "noselect" }
 vim.g.editorconfig = false
 vim.opt.shortmess:append({ I = true })
 vim.opt.inccommand = "nosplit"
